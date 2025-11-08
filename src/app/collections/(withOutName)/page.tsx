@@ -10,6 +10,8 @@ import { useGetCollections, useGetConfig } from '@/lib/client/query'
 export default function CollectionsPage() {
   const router = useRouter()
   const { data: config } = useGetConfig()
+  console.log(config);
+  
   const { data: collections, isError, error } = useGetCollections(config)
 
   useEffect(() => {

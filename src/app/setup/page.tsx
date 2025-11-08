@@ -43,7 +43,7 @@ export default function SetupPage() {
 
       // If no port specified, add default port 8000
       if (!url.port) {
-        url.port = '8000'
+        // url.port = '8000'
         formattedConnectionString = url.toString()
       }
 
